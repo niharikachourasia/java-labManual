@@ -6,7 +6,8 @@ import java.io.*;
 
 class EmployeeDetail{
 
-private String fName,lName,grade,jMonth;
+private String fName,lName,grade;
+Date dt;
 private float salary;
 private static int count=0;
 private int id;
@@ -27,7 +28,7 @@ private int id;
 		this.fName = fName;
 		this.lName = lName;
 		this.grade = grade;
-		//this.jMonth = jMonth;
+		this.dt = dt;
 		this.salary = salary;
 		id = ++count;
 		}
