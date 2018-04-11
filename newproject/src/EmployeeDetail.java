@@ -18,7 +18,7 @@ private int id;
 	fName="";
 	lNameame="";
 	salary=0.00f;
-	garde="";
+	grade="";
 	jMonth="";
 }
 */
@@ -28,6 +28,7 @@ private int id;
 		this.fName = fName;
 		this.lName = lName;
 		this.grade = grade;
+		
 		this.doj = doj;
 		this.salary = salary;
 		id = ++count;
@@ -38,21 +39,10 @@ private int id;
 		System.out.print("\nLast Name: "+ lName);
 		System.out.print("\nSalary: "+ salary);
 		System.out.print("\ngrade: "+ grade);
-	//	System.out.print("\njoining month: "+ dt);
+	    System.out.print("\nJoining date: " + doj.getDay() +"/"+ doj.getMonth() +"/"+ doj.getYear());
+	//    System.out.print("\n joining month: "+ doj.getMonth());
+//	    System.out.print("\n joining month: "+ doj.getYear());
 		System.out.print("\nEmp id: "+ count);
 	}
 }
 
-class Date{
-	int day, month, year;
-	Date(int day, int month, int year){
-		this.day = day;
-		this.month = month;
-		this.year = year;
-	}
-	
-	public void displayDate(){
-		System.out.println("joining date: "+ day + "/" + month + "/" + year + "/" );
-	}
-}
-	
