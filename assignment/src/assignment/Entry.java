@@ -61,14 +61,23 @@ public class Entry {
 		System.out.println("--------------------------------------------------------------");
 
 		*/
-	}
-	/*public void display(Employee e){
-		System.out.println("Employee Name:-"+ e.getName());
-		System.out.println("Employee Address:-"+ e.getAddress().getLine());
-		System.out.println("Employee Country:-"+ e.getAddress().getCountry().getName());
-		System.out.println("Employee city:-"+ e.getAddress().getCountry().getCity().getName());
-		System.out.println("--------------------------------------------------------------");
+		e.setName("MEHA");
+		a.setLine("talawade");
+		e.setAddress(a);
+		c.setName("India");
+		a.setCountry(c);
+		ct.setName("pune");
+		c.setCity(ct);
+		e.display(e);
 		
+		e.setName("akash");
+		a.setLine("triveni nagar");
+		e.setAddress(a);
+		c.setName("India");
+		a.setCountry(c);
+		ct.setName("chennai");
+		c.setCity(ct);
+		e.display(e);
 	}
-*/
+	
 }
